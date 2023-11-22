@@ -1,0 +1,20 @@
+messages:
+  prefix: "#fb6c0e&lʙ#fb7111&lᴇ#fb7614&lᴀ#fc7c16&lᴄ#fc8119&lᴍ#fc861c&lᴄ#fc8b1f&lᴄ#fc9022&lʜ#fc9525&lᴇ#fd9b27&lᴄ#fda02a&lᴋ #fda52d&l▸"
+  error-use: "{PREFIX} &7неверное использование команды."
+  already-check: "{PREFIX} &7Этого игрока уже проверяют."
+  player-offline: "{PREFIX} &7Этот игрок оффлайн."
+  on-check: "{PREFIX} &7Вы вызваны на проверку модератором {moderator}"
+  no-permission: "{PREFIX} &7Недостаточно полномочий для использования данной команды."
+  on-check-moderator: "{PREFIX} &7Вы успешно вызвали на игрока на проверку."
+  success-check-moderator: "{PREFIX} &7Вы отпустили игрока с проверки."
+  success-check: "{PREFIX} &7Вы успешно проверку на читы."
+  failed-check-moderator: "{PREFIX} &7Вы успешно заблокировали игрока за читы."
+
+
+titles:
+  check-start:
+    title: "&7вы вызваны на проверку"
+    subtitle: "#fb6c0e&lʙ#fb7111&lᴇ#fb7614&lᴀ#fc7c16&lᴄ#fc8119&lᴍ#fc861c&lᴄ#fc8b1f&lᴄ#fc9022&lʜ#fc9525&lᴇ#fd9b27&lᴄ#fda02a&lᴋ"
+  check-confirm:
+    title: "&7вы прошли проверку"
+    subtitle: "#fb6c0e&lʙ#fb7111&lᴇ#fb7614&lᴀ#fc7c16&lᴄ#fc8119&lᴍ#fc861c&lᴄ#fc8b1f&lᴄ#fc9022&lʜ#fc9525&lᴇ#fd9b27&lᴄ#fda02a&lᴋ"

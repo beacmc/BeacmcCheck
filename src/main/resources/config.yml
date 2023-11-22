@@ -1,0 +1,30 @@
+settings:
+# техническая поддержка:
+# https://discord.gg/QSAdaTJuET
+
+  main:
+    chat-format: "{PREFIX} &7%player_name% отправил сообщение: &6%message%"
+
+  placeholderapi:
+    placeholders:
+      in-check: "&aНа проверка"
+      not-check: "&cНе на проверке"
+
+  commands:
+
+    # начало проверки
+    #
+
+    check-start:
+      - 'bc %player_name% вызван на проверку'
+
+    check-confirm:
+      - 'bc %player_name% успешно прошёл проверку'
+
+    check-leave:
+      - 'tempban %player_name% 30d Лив с проверки'
+      - 'bc %player_name% вышел с проверки'
+
+    check-cancel:
+      - 'tempban %player_name% 30d Читы'
+      - 'bc %player_name% не прошёл проверку'
