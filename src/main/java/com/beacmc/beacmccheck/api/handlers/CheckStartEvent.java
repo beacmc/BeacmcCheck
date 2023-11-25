@@ -6,14 +6,16 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;
 
-public class onCheckAddEvent extends Event implements Cancellable {
+public class CheckStartEvent extends Event implements Cancellable {
 
+
+    private static final HandlerList handlers = new HandlerList();
     private final Player moderator;
     private final Player checkedPlayer;
 
     private boolean isCancelled;
 
-    public onCheckAddEvent(Player moderator, Player checkedPlayer) {
+    public CheckStartEvent(Player moderator, Player checkedPlayer) {
 
         this.moderator = moderator;
         this.checkedPlayer = checkedPlayer;
@@ -23,12 +25,12 @@ public class onCheckAddEvent extends Event implements Cancellable {
 
     @Override
     public @NotNull HandlerList getHandlers() {
-        return null;
+        return handlers;
     }
 
 
-    public @NotNull HandlerList getHandlersList() {
-        return null;
+    public @NotNull HandlerList getHandlerList() {
+        return handlers;
     }
 
     public Player getCheckedPlayer() {

@@ -10,7 +10,6 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class CheckCommandCompleter implements TabCompleter {
 
@@ -28,20 +27,6 @@ public class CheckCommandCompleter implements TabCompleter {
                 }
             }
         }
-
-        if(args.length == 2) {
-            return args.length == 2 ? (List)getCompletions().stream().filter((category) -> {
-                return category.toLowerCase().startsWith(args[1].toLowerCase());
-            }).collect(Collectors.toList()) : null;
-        }
-        return list;
-    }
-
-    private static List<String> getCompletions() {
-        ArrayList<String> list = new ArrayList<>();
-
-        list.add("cancel");
-        list.add("confirm");
-        return list;
+        return null;
     }
 }

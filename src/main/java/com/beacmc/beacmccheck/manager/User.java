@@ -6,6 +6,7 @@ import com.beacmc.beacmccheck.utils.Hex;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.UUID;
@@ -84,20 +85,23 @@ public class User {
                 Hex.color(messages.getString(subtitle)),
                 1, 35, 20
         );
-        System.out.println("true");
     }
 
-    public void teleport(String world, double x, double y, double z) {
-        Location location = new Location(Bukkit.getWorld(world), x, y, z);
+    public void teleport(Location location) {
         player.teleport(location);
     }
 
-    public Location getLocation(String world, double x, double y, double z) {
-        Location location = new Location(Bukkit.getWorld(world), x, y, z);
-        return location;
+    public Location getLocation() {
+        return player.getLocation();
     }
 
     public Player getPlayer() {
         return player;
+    }
+
+
+    @NotNull
+    public static User getUserByName(String name) {
+        return new User(Bukkit.getPlayer(name));
     }
 }

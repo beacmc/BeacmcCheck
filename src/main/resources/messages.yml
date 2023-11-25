@@ -1,6 +1,7 @@
 messages:
   prefix: "#fb6c0e&lʙ#fb7111&lᴇ#fb7614&lᴀ#fc7c16&lᴄ#fc8119&lᴍ#fc861c&lᴄ#fc8b1f&lᴄ#fc9022&lʜ#fc9525&lᴇ#fd9b27&lᴄ#fda02a&lᴋ #fda52d&l▸"
   error-use: "{PREFIX} &7неверное использование команды."
+  no-check: "{PREFIX} &7Игрок не на проверке."
   already-check: "{PREFIX} &7Этого игрока уже проверяют."
   player-offline: "{PREFIX} &7Этот игрок оффлайн."
   on-check: "{PREFIX} &7Вы вызваны на проверку модератором {moderator}"
@@ -18,3 +19,19 @@ titles:
   check-confirm:
     title: "&7вы прошли проверку"
     subtitle: "#fb6c0e&lʙ#fb7111&lᴇ#fb7614&lᴀ#fc7c16&lᴄ#fc8119&lᴍ#fc861c&lᴄ#fc8b1f&lᴄ#fc9022&lʜ#fc9525&lᴇ#fd9b27&lᴄ#fda02a&lᴋ"
+
+gui:
+  check:
+    title: "&7&l> &0Проверка"
+    check-start:
+      display-name: "#fb6c0eВызвать на проверку"
+      lore: []
+    check-finish:
+      display-name: "#fb6c0eЗавершить проверку"
+      lore:
+        - " "
+        - "#fb6c0eЛКМ &7- Заблокировать игрока"
+        - "#fb6c0eПКМ &7- Отпустить игрока"
+    teleport:
+      display-name: "#fb6c0eТелепортироваться к игроку"
+      lore: []

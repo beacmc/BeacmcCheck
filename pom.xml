@@ -73,6 +73,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.github.devoirr</groupId>
+            <artifactId>GUILib</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
             <groupId>com.github.Brikster</groupId>
             <artifactId>Chatty</artifactId>
             <version>v2.19.14</version>
